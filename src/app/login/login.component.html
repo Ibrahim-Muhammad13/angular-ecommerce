@@ -1,0 +1,30 @@
+<div class="container loginform">
+   <div class="d-flex justify-content-center align-items-center h-100">
+            <form #loginform="ngForm" (ngSubmit)="submitForm(loginform)">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" name="useremail" 
+                  ngModel
+                  #useremail="ngModel"
+                  required 
+                  pattern="^\S+@\S+\.\S+$"
+                  class="form-control" id="exampleInputEmail1" 
+                  aria-describedby="emailHelp" 
+                  placeholder="Enter email">
+                  <small *ngIf="useremail.touched && useremail.invalid" 
+                  id="emailHelp" class="form-text text-danger">
+                    <span *ngIf="useremail?.errors?.['required']">email required</span>
+                    <span *ngIf="useremail?.errors?.['pattern']">email invalid</span>
+                </small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input required ngModel #userpass="ngModel" name="userpass" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  <small *ngIf="userpass.touched && userpass.invalid" id="emailHelp" class="form-text text-danger">password required</small>
+                </div>
+              
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+    
+</div>

@@ -1,0 +1,14 @@
+
+
+<div class="card" style="width: 18rem;">
+    <img [src]="product.image" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{product.name}}</h5>
+      <p class="card-text">{{product.description}}</p>
+      <p class="card-text">{{product.date | date}}</p>
+      <p  [style.color]="product.count >0?'green':'red'" class="card-text">{{product.count | available}}</p>
+      <p  class="card-text">{{product.price|currency:"EGP":"symbol-narrow"}}</p>
+      <button (click)="productDetails(product.id)" class="btn btn-primary">product details</button>
+      <a routerLink="add_to_cart" class="pull-right btn btn-success">product details</a>
+    </div>
+  </div>

@@ -1,0 +1,40 @@
+[
+    {
+        "id": 1,
+        "name": "Phone 1",
+        "price": 799,
+        "description": "A large phone with one of the best screens",
+        "image": "https://cdn.pixabay.com/photo/2016/11/10/16/18/android-1814600_960_720.jpg",
+        "count": 0,
+        "date": "2019, 1, 1"
+    },
+    {
+        "id": 2,
+        "name": "Phone Xsmax",
+        "price": 799,
+        "description": "A large phone with one of the best screens",
+        "image": "https://cdn.pixabay.com/photo/2016/11/10/16/18/android-1814600_960_720.jpg",
+        "count": 4,
+        "date": "2019, 1, 1"
+        },
+        {
+            "id": 3,
+            "name": "samsung ",
+            "price": 799,
+            "description": "A large phone with one of the best screens",
+            "image": "https://cdn.pixabay.com/photo/2016/11/10/16/18/android-1814600_960_720.jpg",
+            "count": 0,
+            "date": "2019, 1, 1"
+            },
+
+    {
+    "id": 5,
+    "name": "Phone 14 pro",
+    "price": 799,
+    "description": "A large phone with one of the best screens",
+    "image": "https://cdn.pixabay.com/photo/2016/11/10/16/18/android-1814600_960_720.jpg",
+    "count": 6,
+    "date": "2019, 1, 1"
+    }
+    
+]
