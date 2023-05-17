@@ -1,14 +1,16 @@
 
 
 <div class="card" style="width: 18rem;">
-    <img [src]="product.image" class="card-img-top" alt="...">
+    <img [src]="product.thumbnail" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">{{product.name}}</h5>
+      <h5 class="card-title">{{product.title}}</h5>
       <p class="card-text">{{product.description}}</p>
       <p class="card-text">{{product.date | date}}</p>
       <p  [style.color]="product.count >0?'green':'red'" class="card-text">{{product.count | available}}</p>
       <p  class="card-text">{{product.price|currency:"EGP":"symbol-narrow"}}</p>
       <button (click)="productDetails(product.id)" class="btn btn-primary">product details</button>
-      <a routerLink="add_to_cart" class="pull-right btn btn-success">product details</a>
+      <button (click)="addTocart(product.id)" class="btn btn-primary">add to cart</button>
+
+      <!-- <a routerLink="['add_to_cart',product.id]" class="pull-right btn btn-success">add to cart</a> -->
     </div>
   </div>

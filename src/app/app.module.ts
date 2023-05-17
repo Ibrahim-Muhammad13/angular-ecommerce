@@ -14,6 +14,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { AddToCartComponent } from './add-to-cart/add-to-cart.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +33,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule
     ,FormsModule,
     ReactiveFormsModule
+    ,HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

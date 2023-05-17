@@ -1,1 +1,30 @@
-<p>add-to-cart works!</p>
+
+
+
+<div class="container">
+
+    <table>
+        <thead>
+            <th>img</th>
+            <th>name</th>
+            <th>price</th>
+            <th>quantity</th>
+            <th>remove</th>
+        </thead>
+        <tbody>
+        <tr *ngFor="let product of products;">
+            <td><img [src]=product.thumbnail  alt=""></td>
+            <td>{{product.title}}</td>
+            <td>{{product.price}}</td>
+            <td>
+            <button (click)="increament(product.id)" class="btn btn-success" >+</button>
+                {{product.quantity}}
+                <button class="btn btn-warning" (click)="decreament(product.id)">-</button>
+            </td>
+            <td><button (click)="removeItem(product.id)" class="btn btn-danger">delete</button>
+            </td>
+            
+        </tr>
+        </tbody>
+    </table>
+</div>
